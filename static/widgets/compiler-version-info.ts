@@ -76,6 +76,7 @@ function reallySetCompilerVersionPopover(
         const clickToExpandContent = $('<a>')
             .text('Toggle full version output')
             .addClass('link-primary')
+            .css('cursor', 'pointer')
             .on('click', () => {
                 versionContent.toggle();
                 hiddenVersionText.toggle();
